@@ -10,9 +10,8 @@
 *         "name": "dockerhub"
 *      }
 
+* oc policy add-role-to-user edit system:serviceaccount:sunny-test:default -n sunny-test
+* oc get project
+* oc project sunny-test
 * oc describe serviceaccount default
-* oc describe secret default-token-05xnu
-* oc policy add-role-to-user edit system:systemaccount:ci:default -n sunny-test
-* oc policy add-role-to-user admin system:systemaccount:ci:default -n sunny-test
-* oc describe serviceaccount default
-* oc policy add-role-to-user edit system:systemaccount:ci:default -n sunny-test
+* oc describe secret default-token-56u9n
