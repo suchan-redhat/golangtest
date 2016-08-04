@@ -91,7 +91,7 @@ spec:
 ```
 ### Update Image source and tag
 
-image: 172.30.166.216:5000/*sunny-demo3*/aml_b2c-pilot_backend:*latest*
+image: 172.30.166.216:5000/**sunny-demo3**/aml_b2c-pilot_backend:**latest**
 
 ### create the deployment config
 
@@ -143,7 +143,7 @@ spec:
     name: svc-b2c-pilot-backend
 ```
 ### update the hostname
-  host: *svc-b2c-pilot-backend-sunny-demo3*.4d25.cx-sunrise.openshiftapps.com
+  host: **svc-b2c-pilot-backend-sunny-demo3**.4d25.cx-sunrise.openshiftapps.com
 
 ### Create the route
 
