@@ -5,7 +5,7 @@
 kind: "BuildConfig"
 apiVersion: "v1"
 metadata:
-  name: "cx-backend-build" 
+  name: "xx-backend-build" 
 spec:
   source: 
     type: "Git"
@@ -20,7 +20,7 @@ spec:
   output: 
     to:
       kind: "DockerImage"
-      name: "registry.cx-sunrise.openshift.com:443/sunny-demo3/aml_b2c-pilot_backend:latest"
+      name: "registry.xx-sunrise.openshift.com:443/sunny-demo3/aml_b2c-pilot_backend:latest"
     pushSecret:
       name: "dockerhub"
 ```
@@ -43,7 +43,7 @@ oc create -f bc.yaml
 
 ### run the build
 ```
-oc start-build cx-backend-build 
+oc start-build xx-backend-build 
 ```
 
 ## Step 2, Create Deployment Config
@@ -137,13 +137,13 @@ kind: Route
 metadata:
   name: route-b2c-pilot-backend
 spec:
-  host: svc-b2c-pilot-backend-sunny-demo3.4d25.cx-sunrise.openshiftapps.com
+  host: svc-b2c-pilot-backend-sunny-demo3.4d25.xx-sunrise.openshiftapps.com
   to:
     kind: Service
     name: svc-b2c-pilot-backend
 ```
 ### update the hostname
-  host: **svc-b2c-pilot-backend-sunny-demo3**.4d25.cx-sunrise.openshiftapps.com
+  host: **svc-b2c-pilot-backend-sunny-demo3**.4d25.xx-sunrise.openshiftapps.com
 
 ### Create the route
 
