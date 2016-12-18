@@ -1,4 +1,4 @@
 <Response>
-<Say voice="alice">English, 中文</Say>
+<Say voice="alice">English</Say>
 <Play>http://demo.twilio.com/docs/classic.mp3</Play>
 </Response>
